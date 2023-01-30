@@ -1,0 +1,128 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.is-fixed {
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 5px 0px #000;
+  background: #200b6a;
+  height: 90px;
+}
+
+.header .header__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .header__right .mobile-button {
+  display: none;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .header__right .mobile-button {
+    display: block;
+  }
+}
+
+.header .header__right .mobile-button .menu-icon {
+  transition: all 0.3s;
+  transform: scale(1.4);
+}
+
+.header .header__right .main-nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header .header__right .main-nav .menu li {
+  position: relative;
+  width: 100%;
+}
+
+.header .header__right .main-nav .menu li a {
+  position: relative;
+  display: block;
+}
+
+.header .header__right .main-nav .menu li {
+  padding-right: 44px;
+}
+
+.header .header__right .main-nav .menu li:nth-child(1) {
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .header__right .main-nav {
+    margin: 0 auto;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: #4526b1;
+    box-shadow: 0px 3px 16px #000;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .header .header__right .main-nav.active {
+    transform: translateX(0);
+  }
+
+  .header .header__right .main-nav .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .header .header__right .main-nav .menu li {
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+  }
+
+  .header .header__right .main-nav .menu li a {
+    padding: 15px 0;
+    padding-left: 40px;
+  }
+
+  .header .header__right .main-nav .menu li.menu-item-has-children.active {
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header .header__right .main-nav {
+    width: 60%;
+  }
+}
+
+.header .header__right .button {
+  display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .header__right .button {
+    display: none;
+  }
+}
