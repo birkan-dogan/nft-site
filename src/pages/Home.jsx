@@ -7,6 +7,8 @@ import Portfolio from "../components/layouts/Portfolio";
 import dataPortfolio from "../assets/data/portfolioData";
 import Monteno from "../components/layouts/Monteno";
 import dataMontono from "../assets/data/data-montono";
+import RoadMap from "../components/layouts/RoadMap";
+import dataRoadMap from "../assets/data/data-Roadmap";
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
       <Speciality data={dataCard} />
       <Portfolio data={dataPortfolio} />
       <Monteno data={dataMontono} />
+      <RoadMap data={dataRoadMap} />
     </div>
   );
 };
