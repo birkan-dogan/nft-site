@@ -3,6 +3,8 @@ import Slider from "../components/slider/Slider";
 import About from "../components/layouts/About";
 import Speciality from "../components/layouts/Speciality";
 import dataCard from "../assets/data/data-card";
+import Portfolio from "../components/layouts/Portfolio";
+import dataPortfolio from "../assets/data/portfolioData";
 
 const Home = () => {
   return (
@@ -11,6 +13,7 @@ const Home = () => {
       <Slider />
       <About />
       <Speciality data={dataCard} />
+      <Portfolio data={dataPortfolio} />
     </div>
   );
 };
