@@ -29,3 +29,21 @@
   margin-left: 30px;
   margin-right: 0;
 }
+
+.team .swiper-slide {
+  padding-top: 50px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.42);
+  margin: 0 15px !important;
+  opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: #fff;
+  position: relative;
+}
