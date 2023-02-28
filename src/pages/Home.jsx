@@ -12,6 +12,8 @@ import dataRoadMap from "../assets/data/data-Roadmap";
 import Newsletter from "../components/layouts/Newsletter";
 import Team from "../components/layouts/Team";
 import dataTeam from "../assets/data/data-team";
+import Partners from "../components/layouts/Partners";
+import dataPartners from "../assets/data/data-partners";
 
 const Home = () => {
   return (
@@ -25,6 +27,7 @@ const Home = () => {
       <RoadMap data={dataRoadMap} />
       <Newsletter />
       <Team data={dataTeam} />
+      <Partners data={dataPartners} />
     </div>
   );
 };
