@@ -10,6 +10,8 @@ import dataMontono from "../assets/data/data-montono";
 import RoadMap from "../components/layouts/RoadMap";
 import dataRoadMap from "../assets/data/data-Roadmap";
 import Newsletter from "../components/layouts/Newsletter";
+import Team from "../components/layouts/Team";
+import dataTeam from "../assets/data/data-team";
 
 const Home = () => {
   return (
@@ -22,6 +24,7 @@ const Home = () => {
       <Monteno data={dataMontono} />
       <RoadMap data={dataRoadMap} />
       <Newsletter />
+      <Team data={dataTeam} />
     </div>
   );
 };
