@@ -1,0 +1,46 @@
+.questions {
+  margin: 50px;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-header {
+  padding: 15px;
+}
+
+.accordion-item .accordion-button {
+  background-color: transparent;
+  color: #fff;
+  padding-left: 50px !important;
+  margin-bottom: 20px;
+  font-size: 24px;
+  padding: 0;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-item .accordion-button::before {
+  content: "\f068";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.accordion-item .accordion-button.collapsed::before {
+  content: "\f067";
+}
+
+.accordion-item .accordion-button::after {
+  display: none;
+}
+
+.accordion-item .accordion-body {
+  padding: 0px 0px 20px 20px;
+  margin-left: 50px;
+}
