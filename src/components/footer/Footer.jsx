@@ -1,10 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/data/logo";
 import "./footer.css";
 
 const Footer = function () {
   const [isVisible, setIsVisible] = useState(false);
+
+  const scrollToTop = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const toggleVisibility = () =>
+    window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
+
+  useEffect(function () {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   return (
     <>
@@ -55,7 +70,11 @@ const Footer = function () {
         </div>
       </footer>
 
-      {isVisible && <Link to={"/"} id="scroll-top"></Link>}
+      {isVisible && (
+        <Link onClick={scrollToTop} to={"/"} id="scroll-top">
+          <h4 style={{ paddingTop: "8px" }}>⬆</h4>
+        </Link>
+      )}
     </>
   );
 };
