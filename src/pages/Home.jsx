@@ -14,6 +14,8 @@ import Team from "../components/layouts/Team";
 import dataTeam from "../assets/data/data-team";
 import Partners from "../components/layouts/Partners";
 import dataPartners from "../assets/data/data-partners";
+import Questions from "../components/layouts/Questions";
+import dataFaq from "../assets/data/data-faq";
 
 const Home = () => {
   return (
@@ -28,6 +30,7 @@ const Home = () => {
       <Newsletter />
       <Team data={dataTeam} />
       <Partners data={dataPartners} />
+      <Questions data={dataFaq} />
     </div>
   );
 };
