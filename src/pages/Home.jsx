@@ -16,6 +16,7 @@ import Partners from "../components/layouts/Partners";
 import dataPartners from "../assets/data/data-partners";
 import Questions from "../components/layouts/Questions";
 import dataFaq from "../assets/data/data-faq";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <Team data={dataTeam} />
       <Partners data={dataPartners} />
       <Questions data={dataFaq} />
+      <Footer />
     </div>
   );
 };
