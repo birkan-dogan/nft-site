@@ -25,7 +25,7 @@
 ## Screenshot
 
 <p align="center">
-<a href="https://nft-site-coral.vercel.app/"><img  src="../src/assets/images/nft-site.png" alt="nft"></a>
+<a href="https://nft-site-coral.vercel.app/"><img  src="./src/assets/images/nft-site.png" alt="nft"></a>
 </p>
 
 <hr>

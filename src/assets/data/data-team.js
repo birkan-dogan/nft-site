@@ -23,7 +23,7 @@ const dataTeam = [
   },
   {
     img: img4,
-    name: "Tim Whatley",
+    name: "Cosmo Kramer",
     position: "Founder & CEO",
   },
   {

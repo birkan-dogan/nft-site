@@ -37,6 +37,7 @@
   display: flex;
   bottom: 50px;
   background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
 }
 
 .team-box .img-team .social p a {

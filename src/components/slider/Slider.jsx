@@ -117,7 +117,6 @@ const Slider = () => {
                 loop
                 autoplay={{
                   delay: 1,
-                  reverseDirection: true,
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
                 }}
